@@ -1,4 +1,71 @@
-body {
-	color: #FF0000;
+p {
+	color: #008000;
+}
+
+
+h1 {
+	font-size: 36px;
+	padding: 0px 75px 0px 150px;
+	color: #0000FF;
+}
+
+h2 {
+	font-size: 30px;
+	color: #808080;
+	padding: 0px 50px 0px 100px;
+	width: 200px;
+	background-color:#87CEEB;
+}
+
+img{
+	border: 2px solid #5d6063;
+	width: 300px;
+	border-radius:100px 0px 100px 0px;
+}
+
+.pros{
+	color:#0000FF;
+	font-size: 15px;
+	
+}
+.cons{
+	color:#FF0000;
+	font-size: 13px;
+}
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.navigation{
+	display: block;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	background-color: #A9A9A9;
+	padding: 5px 20px 5px 20px;
+	text-decoration = none;
+	border-right: 2px solid #bbb;
+}
+.navigatelist{ 
+	background-color: #A9A9A9;
+	float: left;
+	height: 30px;
+}
+
+li a:hover {
+	background_color: #111
+}
+
+.active {
+	display: block;
+	color: white;
+	text-decoration = none;
+	text-align: center;
+	border-right: 2px solid #bbb;
+	padding: 5px 20px 5px 20px;
+	font-size: 20px;
+	background-color: #00008B;
 }
 
