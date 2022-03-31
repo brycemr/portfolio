@@ -3,12 +3,9 @@
   <div class="container-fluid" id="menu">
     <div class="row align-items-center">
       <div class="col-3" id="brand">
-      <!--
         <router-link to="/">
           Bryce Richard's Portfolio
         </router-link>
-      -->
-        Bryce Richard's Portfolio
       </div>
       <div class="col">
         <div class="row align-items-center" id="menu-item">
@@ -31,7 +28,7 @@
     <router-view/>
     <div class="row" id="footer">
       <div class="col">
-        <a href="https://github.com/brycemr/creative-project3">My Website's Github</a>
+        <a href="https://github.com/brycemr/portfolio/tree/master/bryce-portfolio">My Website's Github</a>
       </div>
       <div class="col">
         <router-link to="/admin">Admin Page</router-link>
