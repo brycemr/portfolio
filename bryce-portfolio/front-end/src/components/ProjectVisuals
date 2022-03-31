@@ -1,0 +1,9 @@
+<template>
+<div class="wrapper">
+  <div class="row" v-for='image in project' :key='image.source'>
+    <div class="col" id="projectImage">
+      <img src='image.src'>
+    </div>    
+  </div>
+</div>
+</template>
