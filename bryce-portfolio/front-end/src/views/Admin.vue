@@ -183,7 +183,7 @@ export default {
 <style scoped>
 /* Suggestions */
 .page {
-  height: 100vh;
+  min-height: 100vh;
   padding: 1em;
 }
 .suggestions {
