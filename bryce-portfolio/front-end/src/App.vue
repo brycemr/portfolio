@@ -12,11 +12,9 @@
           <div class="col" id="link1">
             <router-link to="/projects">PROJECTS</router-link>
           </div>
-          <!--
           <div class="col" id="link2">
            <router-link to="/about">ABOUT ME</router-link>
           </div>
-           -->
           <div class="col">
             385-233-7360<br>
             brycerichard26@gmail.com <br>

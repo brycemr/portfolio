@@ -49,6 +49,7 @@ export default {
     return{
       projectList: [],
       currProject: null,
+      show: false,
       path: "",
     }
   },

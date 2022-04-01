@@ -4,9 +4,6 @@
     <div class="container">
       <div class="row">
         <div class="col">
-                <img src="/images/scholarshipPic.JPG">
-        </div>
-        <div class="col-6">
           My name is Bryce, but you can call me Bruce if you'd like. I am an avid photographer and digital
           art creator. You can find some of both by checking out my portfolio page! If I'm not out adding to the
           beautiful collection of art here you cand find me fighting crime, warping between
@@ -37,6 +34,10 @@
     </div>
   </div>
 </template>
+
+<script>
+
+</script>
 
 <style>
   .about{

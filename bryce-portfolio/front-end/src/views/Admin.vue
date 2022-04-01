@@ -1,5 +1,5 @@
 <template>
-<div class="admin" v-if="access">
+<div class="admin page">
   <h1>The Admin Page!</h1>
   <div class="heading">
     <div class="circle">1</div>
@@ -62,14 +62,6 @@
     </div>
   </div>
 </div>
-<div v-else>
-  <div class="form page">
-    <br><br>
-    <input v-model="username" placeholder="Admin Username"><br><br>
-    <input type="password" v-model="password" placeholder="Admin Password"><br><br>
-    <button @click="validate()">Sign In</button>
-  </div>
-</div>
 </template>
 
 <script>
@@ -87,15 +79,15 @@ export default {
       projects: [],
       findTitle: "",
       findProject: null,
-      access: false,
-      username: "",
-      password: "",
     }
   },
   computed: {
     suggestions() {
       let projects = this.projects.filter(project => project.title.toLowerCase().startsWith(this.findTitle.toLowerCase()));
       return projects.sort((a, b) => a.title > b.title);
+    },
+    user() {
+      return this.$root.$data.user;
     }
   },
   created() {
@@ -184,11 +176,6 @@ export default {
         console.log(error);
       }
     },
-    validate(){
-      if(this.username == "MusicalHawk" && this.password == "chessPLZM1ster"){
-        this.access = true;
-      }
-    }
   },
 }
 </script>
@@ -197,6 +184,7 @@ export default {
 /* Suggestions */
 .page {
   height: 100vh;
+  padding: 1em;
 }
 .suggestions {
   width: 200px;
@@ -255,6 +243,7 @@ textarea{
   width: 100%;
 }
 .form {
+  margin-left: 1em;
   margin-right: 50px;
   width: 100%;
 }

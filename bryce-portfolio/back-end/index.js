@@ -35,7 +35,6 @@ const projectSchema = new mongoose.Schema({
 // Create a model for projects in the portfolio
 const Project = mongoose.model('Project', projectSchema);
 
-
 // Upload a photo. Uses the multer middleware for the upload and then returns
 // the path where the photo is stored in the file system.
 app.post('/api/photos', upload.single('photo'), async (req, res) => {
